@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+
+ <track name = "01:Gamma Ray">
+	<width>100</width>
+	<type>linear</type>
+	<num_divisions>6</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "02: Depth">
+	<width>50</width>
+	<type>depth</type>
+	<spacing>50</spacing>
+ </track>
+
+ <track name = "03: Porosity">
+	<width>100</width>
+	<type>linear</type>
+	<num_divisions>10</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "04: Resistivity">
+	<width>100</width>
+	<type>log</type>
+	<left>0.2</left>
+	<right>2000</right>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "05: Bad Hole">
+ 	<width>50</width>
+	<type>linear</type>
+	<num_divisions>5</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "06: TOC">
+	<width>50</width>
+	<type>linear</type>
+	<num_divisions>10</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "07: Lithology">
+	<width>100</width>
+	<type>linear</type>
+	<num_divisions>10</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "08: Porosity">
+	<width>100</width>
+	<type>linear</type>
+	<num_divisions>10</num_divisions>
+	<horizontal>10</horizontal>
+ </track> 
+
+ <track name = "09: Permeability">
+	<width>100</width>
+	<type>log</type>
+	<left>2</left>
+	<right>2000</right>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "10: Oil in Place">
+	<width>100</width>
+	<type>linear</type>
+	<num_divisions>10</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+ <track name = "11: Cummulative Oil">
+	<width>100</width>
+	<type>linear</type>
+	<num_divisions>10</num_divisions>
+	<horizontal>10</horizontal>
+ </track>
+
+
+ <curve name = "001">
+	<name>GR_N</name>
+	<left>0</left>
+	<right>300</right>
+	<color>#006400</color>
+	<track_num>1</track_num>
+	<type>linear</type>
+ </curve>
+
+ <curve name = "002">
+	<name>NPHI_N</name>
+	<left>0.45</left>
+	<right>-0.15</right>
+	<color>#0000FF</color>
+	<track_num>3</track_num>
+	<type>linear</type>
+ </curve>
+
+ <curve name = "003">
+	<name>RHOBC</name>
+	<left>1.95</left>
+	<right>2.95</right>
+	<color>#FF0000</color>
+	<track_num>3</track_num>
+	<type>linear</type>
+ </curve>
+
+ <curve>
+	<name>PE_P</name>
+	<left>0</left>
+	<right>20</right>
+	<color>#E9967A</color>
+	<track_num>3</track_num>
+	<type>linear</type>
+ </curve>
+
+ <curve name = "004">
+	<name>RESDEEP</name>
+	<left>0.2</left>
+	<right>2000</right>
+	<color>#FF0000</color>
+	<track_num>4</track_num>
+	<type>log</type>
+ </curve>
+
+ <curve>
+	<name>DRHO_N</name>
+	<left>-0.1</left>
+	<right>0.1</right>
+	<color>#000000</color>
+	<track_num>5</track_num>
+	<type>linear</type>
+ </curve>
+
+ <curve>
+	<name>Bad_Hole_Flag</name>
+	<left>0</left>
+	<right>1</right>
+	<color>#000000</color>
+	<track_num>5</track_num>
+	<type>fill_left</type>
+ </curve>
+
+ <curve>
+	<name>TOC_FINAL</name>
+	<left>15</left>
+	<right>0</right>
+	<color>#800000</color>
+	<track_num>6</track_num>
+	<type>fill_right</type>
+  <fill_color>#800000</fill_color>
+ </curve>
+
+ <curve>
+	<name>PHIE</name>
+	<left>0.2</left>
+	<right>0.0</right>
+	<color>#000000</color>
+	<track_num>8</track_num>
+	<type>fill_right</type>
+	<fill_color>#006400</fill_color>
+ </curve>
+
+ <curve>
+	<name>BVW</name>
+	<left>0.2</left>
+	<right>0.0</right>
+	<color>#000000</color>
+	<track_num>8</track_num>
+	<type>fill_right</type>
+	<fill_color>#0000CD</fill_color>
+ </curve>
+
+ <curve>
+	<name>BVWI</name>
+	<left>0.2</left>
+	<right>0.0</right>
+	<color>#000000</color>
+	<track_num>8</track_num>
+	<type>fill_right</type>
+	<fill_color>#87CEFA</fill_color>
+ </curve>
+
+ <curve>
+	<name>KA</name>
+	<left>2</left>
+	<right>2000</right>
+	<color>#000000</color>
+	<track_num>9</track_num>
+	<type>log</type>
+ </curve>
+
+ <curve>
+	<name>KEOI</name>
+	<left>2</left>
+	<right>2000</right>
+	<color>#006400</color>
+	<track_num>9</track_num>
+	<type>log</type>
+ </curve>
+
+ <curve>
+	<name>KEWI</name>
+	<left>2</left>
+	<right>2000</right>
+	<color>#0000CD</color>
+	<track_num>9</track_num>
+	<type>log</type>
+ </curve>
+
+  <curve>
+    <name>OIP</name>
+    <left>0</left>
+    <right>0.2</right>
+    <color>#000000</color>
+    <track_num>10 </track_num>
+    <type>fill_left</type>
+    <fill_color>#006400</fill_color>
+  </curve>
+
+  <curve>
+    <name>OIP_CUMM</name>
+    <left>50</left>
+    <right>0</right>
+    <color>#000000</color>
+    <track_num>11 </track_num>
+    <type>fill_right</type>
+    <fill_color>#006400</fill_color>
+  </curve>
+  
+</template>
